@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+- A closure makes the function remember all the variables that existed at the function's birthplace essentially.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +81,28 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+- const dansRoll = personalDice("Dan"); // New Function - this is where a closure was created.
+- const zoesRoll = personalDice("Zoe"); // New Function - this is where a closure was created.
+
+# I can tell because the function personalDice was used to create a new function. 
+
+b. Compare and contrast calling `dansRoll` the first and second time. What is always 
+the same? What could change?
+
+- Due to the variable called "newRoll" on line 69, 
+The first roll might say, 
+"Dan rolled a 4", 
+and if he rolls again, 
+it might then say,
+"Dan rolled a 3".
+# Therefore
+What will always stay the same is the value given inside the parameter 'name' 
+What could change is the value that is produced by the random number generator method inside the variable 'newRoll'.
+
 c. What is the lexical scope of `newRoll`? 
+
+- the lexical scope of `newRoll` is the anonymous function on line 67.
 
 
 ### Task 3 - Stretch Goals

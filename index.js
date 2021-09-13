@@ -37,7 +37,8 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
-  -  counter1 code is preferable if 
+  -  counter1 code is preferable if its being used as a callback function. 
+  -  counter2 code is preferable if its being used in a simple function.
 */
 
 // counter1 code
